@@ -45,6 +45,10 @@ input {
     margin: 1px;
 }
 
+input:active {
+    transition: none;
+}
+
 input:hover {
     background-color: #343434;
 }
@@ -84,7 +88,10 @@ button {
     height: 75px;
     width: 152px;
     outline: 1px #181818 solid;
-    transition: background-color .0.1s;
+}
+
+button:active {
+    transition: none;
 }
 
 button:hover {
