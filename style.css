@@ -86,10 +86,6 @@ button {
     outline: 1px #181818 solid;
 }
 
-button:active {
-    background-color: #133a59;
-}
-
 button:hover {
     background-color: #035ca2;
     border: none;
