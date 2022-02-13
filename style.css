@@ -92,17 +92,6 @@ button:hover {
     border: none;
 }
 
-input,
-.delayed {
-    transition: background-color 0.1s;
-    transition-delay: 100ms;
-  }
-  
-input,
-.delayed:active {
-    transition: none;
-}
-
 p {
     color: white;
     font-size: 44px;
