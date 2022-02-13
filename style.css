@@ -87,7 +87,7 @@ button {
     outline: 1px #181818 solid;
 }
 
-button:active {
+button:hover {
     background-color: #035ca2;
     border: none;
 }
