@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .calc {
@@ -87,12 +88,19 @@ button {
 }
 
 button:active {
-    background-color: #133a59;
-}
-
-button:hover {
     background-color: #035ca2;
     border: none;
+}
+
+input,
+.delayed {
+    transition: background-color 0.1s;
+    transition-delay: 100ms;
+  }
+  
+input,
+.delayed:active {
+    transition: none;
 }
 
 p {
@@ -108,4 +116,39 @@ p {
 .field-for-numbers {
     text-align: right;
     padding: 25px 20px;
+}
+
+.bg__img {
+    position: absolute;
+    opacity: 0.1;
+}
+
+.bg__img_element {
+    height: 112px;
+    width: 112px;
+    top: 40%;
+    left: 10%;
+    transform: skew(15deg);
+    animation: elementmove 8s linear infinite alternate;
+}
+
+.bg__img_triangle {
+    left: 60%;
+}
+
+.bg__img_pattern {
+    top: -12%;
+    left: 60%;
+    transform: rotate(-25deg);
+    animation: patternmove 13s linear infinite;
+}
+
+@keyframes elementmove {
+    from {top: 40%; left: 0}
+    to {top: 0; left: 20%}
+}
+
+@keyframes patternmove {
+    from {top: -12%; left: 60%;}
+    to {top: 50%; left: 100%;}
 }
