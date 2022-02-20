@@ -78,6 +78,10 @@ input:hover {
     background-color: #272727;
 }
 
+input:active {
+    background-color: #494949;
+}
+
 button {
     background-color: #133a59;
     border: none;
@@ -89,18 +93,10 @@ button {
 
 button:hover {
     background-color: #035ca2;
-    border: none;
 }
 
-input,
-.delayed {
-    transition: background-color 0.1s;
-    transition-delay: 100ms;
-  }
-  
-input,
-.delayed:active {
-    transition: none;
+button:active {
+    background-color: #0063b1;
 }
 
 p {
